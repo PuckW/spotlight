@@ -1,0 +1,41 @@
+{% set networkData = _Network.getNetworkData() %}
+
+{% set blogInfo = _Blog.getBlog() %}
+{{ set(this, 'title', blogInfo.title) }}
+
+
+{{this.registerJs("CardController();")}}
+{# {{this.registerJs("BlogController();")}} #}
+
+
+    <section class="home-page-content">
+            <div class="container section">
+                <div class="row header">
+                    <div class="col-sm-12">
+                        <h2>Links</h2>
+                        <h1>{{blogInfo.title | upper}}</h1>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row">
+                    
+                    <div class="col-sm-12">
+
+                        <p>INSERT CONTENT HERE</p>
+
+                    </div><!-- .col-sm-8-->
+
+
+
+
+
+
+
+            </div><!-- .container-->
+        </section><!-- .home-page-content-->
+
+
+
