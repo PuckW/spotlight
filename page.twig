@@ -2,6 +2,77 @@
 
 {{ set(this, 'title', page.title | raw) }}
 
+{{ set(this, 'title', _Blog.getBlogTitle()) }}
+{% set networkData = _Network.getNetworkData() %}
+{% set blogData      = _Blog.getBlog() %}
+{% set blogName      = blogData.title %}
+
+{% macro smartquotes(text) %}
+    {{text|replace({'/[^"]/': '&ldquo;', "/[^'']/": '&lsquo;', "'": '&rsquo;', '"': '&rdquo;'})}}
+{% endmacro %}
+
+
+{{this.registerJs("CardController();")}}
+
+{% set limit = 8 %}
+
+{% set articlesArr = _Blog.getBlogFeed({'limit': limit, 'offset': 0}) %}
+{% set articles = articlesArr.articles %}
+
+
+<!-- used to index each article as we loop over throughout the template -->
+{% set articleCount = 0 %}
+
+{# {% set recentArticles = _Article.getRecentArticles({'limit': 5}) %} #}
+{% set popularArticles = _Article.getPopularArticles({ limit: 4, sortBy: 'VIEWS' }) %}
+
+    {% set sections =  {
+            "solutions": {
+                "feed": "",
+                "link": "",
+                "limit": 4,
+                "id" : ""
+            },
+            "videos": {
+                "feed": "",
+                "link": "",
+                "limit": 4,
+                "id" : ""
+            }
+        }
+    %}
+
+    {% for key, value in sections %}
+        {% for blog in networkData.networkBlogs %}
+            {% if blog.title | lower == key %}
+                {% set sections = sections | merge({
+                    (key) : {
+                        'feed': _Blog.getBlogFeed({'limit': value['limit'], 'offset': 0, 'blogid':blog.guid}),
+                        'link' : blog.link,
+                        'id' : blog.guid
+                        }
+                    }) %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+
+    <main id="main" class="site-main" role="main">
+        
+
+        {% if articles|length > 0 %}
+
+
+        <section class="featured-slider">
+            <div class="">
+                {% if articles[0] %}                                                                
+                    {{this.render('partials/_single-article.twig', {article: articles[0], position: 1, containerClass: 'swiper-slide s1168x587'}) | raw}}
+                    {% set articleCount = articleCount + 1 %}
+                {% endif %}
+            </div><!-- .swiper-container-->
+        </section><!-- .featured-slider-->
+        {% endif %}
+        </main>
+
 <!-- Begin Container -->
 <div class="page_section">
     <section class="container-fluid" style="max-width:none">
