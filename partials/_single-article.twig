@@ -50,6 +50,9 @@
     {% set articleTitle =  quotes.smarten(titleTruncateLength is defined ? article.title | truncate(titleTruncateLength) : article.title)  %}
 
     {% set figureClass =  article.featuredMedia['type'] == 'video' ? 'video' : '' %}
+        {% if 'stat-page' in containerClass %}
+            {% set figureClass = figureclass + ' stat-page' %}
+        {% endif %}
 
 
     <div class="{{containerClass}}" data-title="{{ articleTitle | raw }}">
