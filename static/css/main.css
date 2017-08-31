@@ -9674,6 +9674,8 @@ body.channel.hotspots .hotspot, body.section.hotspots .hotspot {
         margin-left: auto;
         padding-left: 15px;
         padding-right: 15px; }
+        .featured-slider a.card article .content .stat-page {
+          display: none; }
         .featured-slider a.card article .content:before, .featured-slider a.card article .content:after {
           content: " ";
           display: table; }

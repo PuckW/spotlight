@@ -97,7 +97,9 @@
                 max-height:587px;
                 padding: 160px 15px 10px 0;
                 z-index: 2;
-
+                .stat-page{
+                    display:none;
+                }
 
                 // below make content behave like bootstrap container
                 @include container-fixed;
