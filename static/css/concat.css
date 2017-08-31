@@ -7321,6 +7321,9 @@ ul.search-sub-menu {
   .searchPage h1 {
     margin-bottom: 50px; }
 
+.stat-page {
+  max-height: 250px; }
+
 .search-icon {
   background-image: url(../images/search.svg);
   background-repeat: no-repeat;
