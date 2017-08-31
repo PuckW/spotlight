@@ -49,6 +49,12 @@ ul.search-sub-menu {
 
 .stat-page {
     max-height: 250px;
+    .content{
+        display:none;
+    }
+    .figure{
+        height:250px;
+    }
 }
 
 .search-icon{
