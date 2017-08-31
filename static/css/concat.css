@@ -8979,6 +8979,12 @@ body.article {
   line-height: 60px;
   height: 100%; }
 
+.article .stat-page .figure {
+  height: 250px; }
+
+.article .stat-page .content {
+  display: none; }
+
 body.channel .section, body.section .section {
   padding-top: 50px; }
   body.channel .section > .header h2, body.section .section > .header h2 {

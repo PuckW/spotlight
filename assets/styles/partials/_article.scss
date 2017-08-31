@@ -493,4 +493,13 @@ body.article {
 		line-height: 60px;
 		height: 100%;
 	}
+
+	.stat-page {
+		.figure{
+			height:250px; 
+		}
+		.content{
+			display:none;
+		}
+	}
 }
