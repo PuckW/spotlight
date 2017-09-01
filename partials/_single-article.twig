@@ -77,8 +77,12 @@
                     </figure>
                 {% endif %}
 
-
-                <div class="content">
+                {% if 'stat-page' in containerClass %}
+                    <div class="content stat-page">
+                {% else %}
+                    <div class="content">
+                {% endif %}
+                
                     <div class="category">{{article.label}}</div>
                     
                     <h2>{{ articleTitle }}</h2>
