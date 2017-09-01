@@ -67,7 +67,12 @@
             data-article-image="{{articleImg}}" 
             data-article-text="{{Helper.htmlToText(article.title, -1) | raw | escape('html')}}">
 
-            <article class="">
+
+                {% if 'stat-page' in containerClass %}
+                    <article class="stat-page">
+                {% else %}
+                    <article class="">
+                {% endif %}
                 {% if (article.hasMedia == 'TRUE' or article.hasPreviewMedia == 'TRUE') and imageSuppress == 'false' %}
                     <figure class="{{figureClass}}">
                         <picture>
