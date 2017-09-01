@@ -7323,11 +7323,9 @@ ul.search-sub-menu {
 
 .stat-page {
   max-height: 250px; }
-  .stat-page .figure {
-    height: 250px; }
 
-.content .stat-page {
-  display: none; }
+.static-page {
+  margin-left: 15%; }
 
 .search-icon {
   background-image: url(../images/search.svg);
