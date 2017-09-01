@@ -59,8 +59,12 @@
         {% set articleImgSmall = _Media.getMediaUrl(article.featuredMedia,500, 500, {'crop': 'fill', 'gravity': 'faces'} ) %}
         {% set articleImg = _Media.getMediaUrl(article.featuredMedia,imgWidth, imgHeight, {'crop': 'fill', 'gravity': 'faces'} ) %}
 
-        <a  href="{{article.url}}" 
-            class="{{swap}} card article {{hasArticleMediaClass}}" 
+        <a  href="{{article.url}}"
+                {% if 'stat-page' in containerClass %}
+                    class="{{swap}} card article {{hasArticleMediaClass}} stat-page"
+                {% else %}
+                    class="{{swap}} card article {{hasArticleMediaClass}}"
+                {% endif %}  
             data-id="{{article.articleId}}" 
             data-position="{{position}}" 
             data-social="0" 
