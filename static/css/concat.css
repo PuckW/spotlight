@@ -7327,13 +7327,17 @@ ul.search-sub-menu {
 .static-page {
   margin-left: 15%; }
 
-div.page-sidebar hr {
+div.page-sidebar {
+  border-left: dotted;
   border-width: 2px; }
-
-div.page-sidebar h4 {
-  font-size: 1rem;
-  margin-top: 16px;
-  margin-bottom: 0; }
+  div.page-sidebar h2 {
+    font-size: 1.5rem; }
+  div.page-sidebar hr {
+    border-width: 2px; }
+  div.page-sidebar h4 {
+    font-size: 1rem;
+    margin-top: 16px;
+    margin-bottom: 0; }
 
 .search-icon {
   background-image: url(../images/search.svg);

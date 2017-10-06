@@ -57,8 +57,16 @@ ul.search-sub-menu {
 }
 
 div.page-sidebar {
-    hr{
-        color: color(gold);
+
+    border-left: dotted;
+    border-width: 2px;
+    border-color: color(grey);
+    h2{
+        font-size: rem(24);
+    }
+
+    hr {
+        border-color: color(gold);
         border-width: 2px;
     }
     h4{
