@@ -60,13 +60,14 @@ div.page-sidebar {
 
     border-left: dotted;
     border-width: 2px;
-    border-color: color(grey);
+    border-color: #333333;
+    margin-left: 15px;
     h2{
         font-size: rem(24);
     }
 
     hr {
-        border-color: color(gold);
+        border-color: #333333;
         border-width: 2px;
     }
     h4{
