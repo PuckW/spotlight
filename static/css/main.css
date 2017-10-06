@@ -7331,16 +7331,19 @@ div.page-sidebar {
   border-left: dotted;
   border-width: 2px;
   border-color: #333333;
-  margin-left: 15px; }
+  padding-left: 15px; }
   div.page-sidebar h2 {
     font-size: 1.5rem; }
   div.page-sidebar hr {
-    border-color: #333333;
+    border-color: #847645;
     border-width: 2px; }
   div.page-sidebar h4 {
     font-size: 1rem;
     margin-top: 16px;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-weight: 400; }
+  div.page-sidebar p {
+    font-weight: 200; }
 
 .search-icon {
   background-image: url(../images/search.svg);

@@ -61,19 +61,23 @@ div.page-sidebar {
     border-left: dotted;
     border-width: 2px;
     border-color: #333333;
-    margin-left: 15px;
+    padding-left: 15px;
     h2{
         font-size: rem(24);
     }
 
     hr {
-        border-color: #333333;
+        border-color: #847645;
         border-width: 2px;
     }
     h4{
         font-size: rem(16);
         margin-top:16px;
         margin-bottom: 0;
+        font-weight: 400;
+    }
+    p{
+        font-weight: 200;
     }
 }
 
