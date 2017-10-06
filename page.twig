@@ -1,4 +1,5 @@
 {% set page = _Page.getPageData(slug) %}
+{% set sidebar = _Page.getPageData("events") %}  // slug is just the page name hyphenated
 
 {{ set(this, 'title', page.title | raw) }}
 
@@ -22,39 +23,6 @@
 
 <!-- used to index each article as we loop over throughout the template -->
 {% set articleCount = 0 %}
-
-{# {% set recentArticles = _Article.getRecentArticles({'limit': 5}) %} #}
-{% set popularArticles = _Article.getPopularArticles({ limit: 4, sortBy: 'VIEWS' }) %}
-
-    {% set sections =  {
-            "solutions": {
-                "feed": "",
-                "link": "",
-                "limit": 4,
-                "id" : ""
-            },
-            "videos": {
-                "feed": "",
-                "link": "",
-                "limit": 4,
-                "id" : ""
-            }
-        }
-    %}
-
-    {% for key, value in sections %}
-        {% for blog in networkData.networkBlogs %}
-            {% if blog.title | lower == key %}
-                {% set sections = sections | merge({
-                    (key) : {
-                        'feed': _Blog.getBlogFeed({'limit': value['limit'], 'offset': 0, 'blogid':blog.guid}),
-                        'link' : blog.link,
-                        'id' : blog.guid
-                        }
-                    }) %}
-            {% endif %}
-        {% endfor %}
-    {% endfor %}
 
     <main id="main" class="site-page" role="main">
         
@@ -80,9 +48,14 @@
         <div class="content-wrap">
             <!-- <h3 class="sub-heading">{{page.title | raw}}</h3> -->
             <div class="row">
-                <div class="col-full">
+                <div class="col-sm-9 col-md-9 col-lg-9">
                     <div class="content_area static-page">
                         {{page.content | raw}}                        
+                    </div>
+                </div>
+                 <div class="col-sm-3 col-md-3 col-lg-3">
+                    <div class="page-sidebar">
+                          {{sidebar.content | raw}}                      
                     </div>
                 </div>
             </div>
