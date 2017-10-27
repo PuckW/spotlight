@@ -154,8 +154,40 @@
     }
 }
 
+
 section.sponsors {
     padding-bottom:50px;
+    .sponsors-list{
+        background-repeat: no-repeat;
+    }
+    header{
+        padding: 60px 0 0 0;
+        background: transparent url(../images/logos/apac-logo.png) no-repeat center top;
+    }
+    .sponsors_Mercedes-Benz {
+        background-image: url(../images/logos/sponsor_mercedes-benz.png);
+    }
+    .sponsors_UPS {
+        background-image: url(../images/logos/sponsor_ups.png);
+    }
+    .sponsors_Rolex {
+        background-image: url(../images/logos/sponsor_rolex.png);
+    }
+    .sponsors_ATT {
+        background-image: url(../images/logos/sponsor_att.png);
+    }
+    .sponsors_Samsung {
+        background-image: url(../images/logos/sponsor_samsung.png);
+    }
+    .sponsors_Zurich {
+        background-image: url(../images/logos/sponsor_zurich.png);
+    }
+    .sponsors_3M {
+        background-image: url(../images/logos/sponsor_3m.png);
+    }
+    .sponsors_IBM {
+        background-image: url(../images/logos/sponsor_ibm.png);
+    }
 
     h2 {
         margin-top:57px;
