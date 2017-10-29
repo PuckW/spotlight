@@ -8641,28 +8641,13 @@ ul.menu > li > ul.sub-menu.breaking-news-menu > li > ul.sub-sub-menu > li {
     margin-top: 45px; }
 
 section.sponsors {
+  padding-bottom: 50px;
   padding-bottom: 50px; }
   section.sponsors .sponsors-list {
     background-repeat: no-repeat; }
   section.sponsors header {
     padding: 60px 0 0 0;
     background: transparent url(../images/logos/apac-logo.png) no-repeat center top; }
-  section.sponsors .sponsors_Mercedes-Benz {
-    background-image: url(../images/logos/sponsor_mercedes-benz.png); }
-  section.sponsors .sponsors_UPS {
-    background-image: url(../images/logos/sponsor_ups.png); }
-  section.sponsors .sponsors_Rolex {
-    background-image: url(../images/logos/sponsor_rolex.png); }
-  section.sponsors .sponsors_ATT {
-    background-image: url(../images/logos/sponsor_att.png); }
-  section.sponsors .sponsors_Samsung {
-    background-image: url(../images/logos/sponsor_samsung.png); }
-  section.sponsors .sponsors_Zurich {
-    background-image: url(../images/logos/sponsor_zurich.png); }
-  section.sponsors .sponsors_3M {
-    background-image: url(../images/logos/sponsor_3m.png); }
-  section.sponsors .sponsors_IBM {
-    background-image: url(../images/logos/sponsor_ibm.png); }
   section.sponsors h2 {
     margin-top: 57px;
     margin-bottom: 14px;
