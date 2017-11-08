@@ -8510,13 +8510,13 @@ ul.menu > li > ul.sub-menu.breaking-news-menu > li > ul.sub-sub-menu > li {
           padding: 8px; } }
       @media screen and (min-width: 620px) {
         .site-header .site-header-main .navbar-brand > img.mobile-logo {
-          height: 46px; } }
+          display: none; } }
       .site-header .site-header-main .navbar-brand > img.main-logo {
         margin-top: -2px;
         height: 75px; }
         @media screen and (max-width: 620px) {
           .site-header .site-header-main .navbar-brand > img.main-logo {
-            display: none; } }
+            height: 46px; } }
     .site-header .site-header-main .navbar-right {
       margin-top: 25px; }
       @media screen and (max-width: 620px) {

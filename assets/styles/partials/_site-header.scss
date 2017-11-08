@@ -40,7 +40,7 @@
             }
             > img.mobile-logo {
                 @media screen and (min-width: $mobile-break){
-                   height: 46px;
+                    display:none;
                 }
             }
             > img.main-logo {
@@ -48,7 +48,7 @@
                 height:75px;
 
                 @media screen and (max-width: $mobile-break){
-                    display:none;
+                    height:46px;
                 }
 
             }
