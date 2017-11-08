@@ -8510,10 +8510,10 @@ ul.menu > li > ul.sub-menu.breaking-news-menu > li > ul.sub-sub-menu > li {
           padding: 8px; } }
       @media screen and (min-width: 620px) {
         .site-header .site-header-main .navbar-brand > img.mobile-logo {
-          display: none; } }
+          height: 46px; } }
       .site-header .site-header-main .navbar-brand > img.main-logo {
-        margin-top: 10px;
-        height: 46px; }
+        margin-top: -2px;
+        height: 75px; }
         @media screen and (max-width: 620px) {
           .site-header .site-header-main .navbar-brand > img.main-logo {
             display: none; } }
