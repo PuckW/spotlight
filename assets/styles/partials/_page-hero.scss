@@ -1,7 +1,12 @@
 .page-hero{
     height: 520px;
     text-align: center;
-    
+    @media screen and (max-width: $sm-break){
+         height: 350px;
+    }
+    @media screen and (max-width: $mobile-break){
+         height: 200px;
+    }
 
     .image-wrapper{
         width: 100%;
