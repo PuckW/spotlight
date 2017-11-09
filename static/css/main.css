@@ -9943,7 +9943,7 @@ body.channel.hotspots .hotspot, body.section.hotspots .hotspot {
       background: white; }
       @media screen and (max-width: 620px) {
         .card-rec a.card > article > .content {
-          padding: 11px 28px 10px 14px; } }
+          padding: 10px 28px 10px 14px; } }
       .card-rec a.card > article > .content > .category {
         font-size: 0.6875em;
         font-weight: bold;
