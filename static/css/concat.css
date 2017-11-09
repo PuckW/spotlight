@@ -10194,7 +10194,7 @@ body.channel.hotspots .hotspot, body.section.hotspots .hotspot {
         .card-sm a.card.social {
           height: 115px; } }
       .card-sm a.card.social article {
-        background: rgba(0, 0, 0, 0.8); }
+        background: #FFF; }
       .card-sm a.card.social .content .category {
         margin-top: 0;
         margin-bottom: 8px; }
