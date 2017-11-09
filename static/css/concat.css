@@ -9905,9 +9905,9 @@ body.channel.hotspots .hotspot, body.section.hotspots .hotspot {
       min-height: 100%; }
       @media screen and (max-width: 620px) {
         .card-rec a.card > article > figure {
-          width: 116px;
-          height: 116px;
-          flex: 0 0 116px; } }
+          width: 125px;
+          height: 125px;
+          flex: 0 0 125px; } }
       .card-rec a.card > article > figure.video:after {
         top: 40%;
         left: 40%; }
