@@ -15,6 +15,7 @@ body.article {
 		@media screen and (max-width: $mobile-break) {
 			left:0;
 			width:100%;
+			bottom:-35px;
 		}
 
 		> .links {
