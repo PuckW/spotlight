@@ -276,7 +276,10 @@ body.article {
 
 
 		    a.card {
-	        	height:334px;
+	        	
+	        	@media screen and (max-width: $sm-break) {
+							height: 250px;
+						}
 	        	@media screen and (max-width: $mobile-break) {
 							height: 125px;
 						}
@@ -286,6 +289,7 @@ body.article {
 	        	    > figure {
 	        	   		height: 209px;
 						
+
 						@media screen and (max-width: $mobile-break) {
 							height: 125px;
 						}
@@ -299,7 +303,7 @@ body.article {
 
 			        > .content {
 						border: 1px solid #979797;
-						border-top:none;
+						// border-top:none;
 						@media screen and (max-width: $mobile-break) {
 							border-top:1px solid #6b6d71;
 							border-left:none;
