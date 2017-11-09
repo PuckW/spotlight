@@ -276,6 +276,9 @@ body.article {
 
 		    a.card {
 	        	height:334px;
+	        	@media screen and (max-width: $mobile-break) {
+							height: 125px;
+						}
 
 		        > article {
 
@@ -283,7 +286,7 @@ body.article {
 	        	   		height: 209px;
 						
 						@media screen and (max-width: $mobile-break) {
-							height: 115px;
+							height: 125px;
 						}
 
 

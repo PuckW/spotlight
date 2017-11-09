@@ -8567,6 +8567,9 @@ ul.menu > li > ul.sub-menu.breaking-news-menu > li > ul.sub-sub-menu > li {
 
 .home-page-content {
   padding-bottom: 50px; }
+  @media (max-width: 991px) {
+    .home-page-content {
+      padding-bottom: 0; } }
 
 .index-top {
   position: relative;
@@ -8849,11 +8852,14 @@ body.article {
         margin-bottom: 15px; } }
   .article article.article-main .related-articles a.card {
     height: 334px; }
+    @media screen and (max-width: 620px) {
+      .article article.article-main .related-articles a.card {
+        height: 125px; } }
     .article article.article-main .related-articles a.card > article > figure {
       height: 209px; }
       @media screen and (max-width: 620px) {
         .article article.article-main .related-articles a.card > article > figure {
-          height: 115px; } }
+          height: 125px; } }
       .article article.article-main .related-articles a.card > article > figure > img {
         max-width: 100%; }
     .article article.article-main .related-articles a.card > article > .content {

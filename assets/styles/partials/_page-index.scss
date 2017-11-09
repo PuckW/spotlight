@@ -28,6 +28,10 @@
 
 .home-page-content {
     padding-bottom:50px;
+
+    @media (max-width: $mmd-break-down) {
+           padding-bottom:0;
+        }
 }
 
 .index-top {
